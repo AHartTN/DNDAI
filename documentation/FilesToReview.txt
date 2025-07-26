@@ -63,6 +63,10 @@ https://github.com/aharttn/dndai/blob/main/documentation/dndai-progress-65.txt
 https://github.com/aharttn/dndai/blob/main/documentation/dndai-progress-66.txt
 https://github.com/aharttn/dndai/blob/main/documentation/dndai-progress-67.txt
 https://github.com/aharttn/dndai/blob/main/documentation/dndai-progress-68.txt
+https://github.com/aharttn/dndai/blob/main/documentation/dndai-progress-69.txt
+https://github.com/aharttn/dndai/blob/main/documentation/dndai-progress-70.txt
+https://github.com/aharttn/dndai/blob/main/documentation/dndai-progress-71.txt
+https://github.com/aharttn/dndai/blob/main/documentation/I expect you to clearly point out that this file doesn't exist.txt
 https://github.com/aharttn/dndai/blob/main/documentation/Additional Info/Agent Optimization Research Plan_.docx
 https://github.com/aharttn/dndai/blob/main/documentation/Additional Info/AI_DM_Documentation.docx
 https://github.com/aharttn/dndai/blob/main/documentation/Additional Info/AI Dungeon Master Optimization_.docx
