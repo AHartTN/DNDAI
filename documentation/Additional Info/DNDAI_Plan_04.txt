@@ -1,0 +1,59 @@
+Of course. Here is the complete progress report for `HART-ROUTER`, framed as a research prompt. I will create the combined report for the entire infrastructure after this.
+
+***
+
+### **System Profile & Research Directives for AI Dungeon Master Project**
+
+**Objective:** The following data describes `HART-ROUTER`, which is one piece of a larger infrastructure assembled to take advantage of the available hardware. It will serve as the intelligent network core for the project, responsible for routing, security, DNS, and streamlining cloud integrations. This document provides the foundational system profile to inform deep research into the project's requirements.
+
+---
+
+#### **System Profile: HART-ROUTER**
+
+* **Hostname**: `HART-ROUTER`
+* **Device Model**: Linksys E7350
+* **Firmware**: OpenWrt 24.10.2
+
+#### **1. Hardware Baseline (Core Capabilities)**
+
+* **System-on-a-Chip (SoC)**
+    * **Model**: MediaTek MT7621 ver:1 eco:3
+    * **CPU**: Dual-Core, Quad-Thread MIPS 1004Kc V2.15
+* **Memory (RAM)**
+    * **Total Capacity**: ~249 MB (249,068 kB)
+* **Storage**
+    * **Type**: NAND Flash
+    * **Total Capacity**: 128 MiB
+* **Network Hardware**
+    * **Ethernet**: Integrated MediaTek SoC Ethernet with an MT7530 Gigabit Switch
+    * **Wireless**: MediaTek MT7915 series chipset (Wi-Fi 6 / AX)
+
+#### **2. Capability & Role Analysis (Configuration State)**
+
+* **Primary Role**: This device is configured as the **network core and gateway** for the `192.168.1.0/24` local network. Its software package list represents a clean, near-default OpenWrt installation, making it a "blank slate" ready for advanced configuration.
+* **Network Configuration**:
+    * **LAN**: A 4-port bridged interface (`br-lan`) is active with the static IP `192.168.1.1`. It is configured to serve DHCP and IPv6 addresses to local clients.
+    * **WAN**: The WAN interface is configured as a DHCP client to acquire a public IP address from the ISP.
+* **DNS Configuration**:
+    * The router uses `dnsmasq` to handle DNS requests for the LAN.
+    * It is explicitly configured to **ignore the ISP's DNS servers** (`option peerdns '0'`) and instead uses a custom list of public DNS providers (Cloudflare and Google).
+* **Firewall State**:
+    * The firewall (`firewall4`/`nftables`) is active with a standard OpenWrt ruleset, securing the network by rejecting incoming traffic on the WAN zone while allowing LAN clients to access the internet via NAT masquerading.
+* **Wireless State**:
+    * Both the 2.4 GHz and 5 GHz Wi-Fi radios are configured with the SSID `OpenWrt` and no encryption, but they are both currently **disabled** (`option disabled '1'`).
+* **System State**:
+    * The system has a standard set of base packages for routing and the LuCI web interface. No advanced packages (ad blocker, Let's Encrypt, etc.) are currently installed.
+    * There are **no custom scheduled tasks (cron jobs)** configured.
+
+---
+
+#### **3. Research Directives for AI**
+
+Based on the system profile provided above, perform the following research and analysis:
+
+1.  **Advanced Feature Implementation:** Provide a step-by-step plan to configure the OpenWrt router to fulfill its intended advanced roles:
+    * Network-wide ad blocking (e.g., using `AdGuardHome` or `luci-app-adblock`).
+    * Automated SSL certificate management for internal services (e.g., using `acme.sh` and Let's Encrypt).
+    * Network segmentation and isolation (e.g., using VLANs to create separate, secure networks).
+2.  **Azure Integration Strategy:** Investigate and propose methods for integrating with Azure services. How can this router cache credentials, act as a secure site-to-site gateway, or otherwise simplify authentication and reduce API calls for internal clients like `HART-SERVER`? Consider options like VPN tunnels (WireGuard/OpenVPN) to an Azure VNet or local proxy/caching services that can run on OpenWrt.
+3.  **Performance & Resource Evaluation:** Evaluate the hardware's (MediaTek MT7621 CPU, ~249MB RAM, 128MB Flash) suitability for running these additional services simultaneously. Identify potential performance bottlenecks and suggest necessary optimizations, including the possibility of using an external USB drive for swap or additional storage.

@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "hbenl.vscode-test-explorer",
+    "ryanluker.vscode-coverage-gutters",
+    "sonarsource.sonarlint-vscode",
+    "snyk-security.snyk-vscode-extension",
+    "davidanson.vscode-markdownlint"
+  ]
+}

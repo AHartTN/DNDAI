@@ -1,0 +1,90 @@
+Here is the final, master infrastructure report. It synthesizes all the hardware profiles we have assembled and presents a unified set of research directives based on our complete understanding of the project's goals.
+
+***
+
+### **Final Infrastructure Analysis & Master Research Prompt**
+
+**Overall Objective:** The following data inventories the hardware assets for a distributed infrastructure designed to develop and host a "microservice" AI Dungeon Master. The end goal is a comprehensive plan for a VS Code agent to configure this entire infrastructure from a clean slate, allocating workloads to the optimal hardware to achieve the project's objectives while preserving all operational requirements.
+
+---
+---
+
+### **Component 1: HART-DESKTOP (Interactive Development & Gaming Node)**
+
+#### **System Identification**
+* [cite_start]**Hostname**: `HART-DESKTOP` [cite: 6209]
+* [cite_start]**Operating System Foundation**: Microsoft Windows 11 Pro [cite: 6230]
+
+#### **Hardware Inventory**
+* [cite_start]**System**: ASUS Motherboard, AMI UEFI BIOS [cite: 6199, 6216]
+* [cite_start]**CPU**: Intel(R) Core(TM) i9-14900KS (24 Cores, 32 Threads) [cite: 6218, 6285-6286]
+* **GPU**: NVIDIA GeForce RTX 4060 Ti (16 GB VRAM) (User Confirmed)
+* [cite_start]**RAM**: 192 GiB DDR5 @ 5200 MHz [cite: 6228, 6289-6307]
+* [cite_start]**Storage**: 2x 2TB NVMe Samsung SSD 990 PRO, 1x 512GB NVMe SAMSUNG SSD [cite: 6308-6334]
+* [cite_start]**Network**: Intel I226-V Ethernet, Intel Wi-Fi 7 BE202, Bluetooth [cite: 6339-7156]
+
+---
+
+### **Component 2: HART-SERVER (Persistent Services Workhorse)**
+
+#### **System Identification**
+* **Hostname**: `hart-server`
+* **Operating System Foundation**: Ubuntu 22.04.5 LTS
+* **Kernel**: Linux 5.15.0-144-generic
+
+#### **Hardware Inventory**
+* **System**: MSI X99A GAMING PRO CARBON Motherboard
+* **CPU**: Intel(R) Core(TM) i7-6850K (6 Cores, 12 Threads)
+* **GPU**: NVIDIA GeForce GTX 1080 Ti (GP102)
+* **Memory (RAM)**: 128 GiB DDR4 (Note: Configured at 2133 MT/s, rated for 3000 MT/s)
+* **Storage**: A large, heterogeneous array including 2x NVMe SSDs (1TB, 256GB) and multiple SATA SSDs and HDDs totaling over 8TB.
+* **Network**: Intel I218-V Ethernet, Intel Wi-Fi 6 AX210
+
+---
+
+### **Component 3: HART-ROUTER (Network Core)**
+
+#### **System Identification**
+* **Hostname**: `HART-ROUTER`
+* **Device Model**: Linksys E7350
+* **Firmware Foundation**: OpenWrt
+
+#### **Hardware Inventory**
+* **SoC**: MediaTek MT7621 (Dual-Core MIPS)
+* **RAM**: ~249 MB
+* **Storage**: 128 MiB NAND Flash
+* **Network**: Gigabit Ethernet Switch, Wi-Fi 6 (AX)
+
+---
+
+### **Component 4: Internet Gateway (Modem)**
+
+#### **System Identification**
+* **Device Type**: Cable Modem
+* **Model**: ARRIS SURFboard S33v2
+* **Firmware Version**: `TB01.03.001.11_051722_212.S3`
+
+#### **Hardware Inventory**
+* **Hardware Version**: 1.0
+* **DOCSIS Version**: 3.1
+* **Ethernet Ports**: 1x 2.5 Gbps Port (Yellow), 1x 1.0 Gbps Port (Grey/Black)
+* **Provisioned Internet Speed:** 1 Gbps download / 40 Mbps upload (User Confirmed).
+
+---
+---
+
+### **Integrated Research Directives for AI**
+
+Based on the full inventory of the distributed infrastructure, generate a comprehensive implementation plan that addresses the following:
+
+1.  **Workload Distribution and Architecture:**
+    * Design a distributed architecture for the AI DM microservices. Propose a specific workload allocation plan that leverages the unique strengths of each compute node. For example:
+        * **`HART-DESKTOP` (RTX 4060 Ti):** Primary node for AI model **training**, fine-tuning, and high-demand interactive development tasks.
+        * **`HART-SERVER` (GTX 1080 Ti):** Primary node for **24/7 hosting** of the deployed application (e.g., C# backend, T-SQL database in Docker containers) and serving as a dedicated **inference server** for models that fit within its 11GB VRAM.
+2.  **Compute Node Configuration:**
+    * **For `HART-DESKTOP`:** Design a virtualization strategy (e.g., WSL2 with GPU acceleration, Hyper-V with GPU Passthrough) that provides a powerful, isolated Linux environment for AI training while **preserving the host Windows OS for native gaming performance**. This is a critical, non-negotiable constraint. Provide a complete software and driver manifest.
+    * **For `HART-SERVER`:** Generate a plan to configure the hardware as a high-performance, headless server for hosting containerized applications. This must include OS hardening, performance tuning (including a recommendation on addressing the RAM speed discrepancy), and a robust management plan for its complex storage array.
+3.  **Network and Security Configuration:**
+    * Generate a complete OpenWrt configuration for `HART-ROUTER` that supports this distributed system. The configuration must implement network segmentation (VLANs) to isolate the server environment, ensure high-bandwidth/low-latency communication between the two compute nodes, and provide features like network-wide ad blocking and a secure VPN gateway. The plan must be optimized for the provisioned **1 Gbps / 40 Mbps** internet service.
+4.  **Agentic Build Plan:**
+    * Synthesize the technical goals from the user's strategic documents with the methodologies from the agent research documents. The final output must be a master plan that an AI agent can execute, including the full **"Agent Constitution"** (`.github/copilot-instructions.md`) and a library of **Task Blueprints** (`.prompt.md` files) required to build, configure, and deploy the entire system.

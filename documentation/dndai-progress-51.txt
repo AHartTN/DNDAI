@@ -1,0 +1,60 @@
+Understood. That is a critical architectural clarification. The system is not a single, monolithic AI but a **suite of specialized agents**. I have updated the master prompt to make this a foundational directive for the research AI.
+
+Here is the final, complete master report and research prompt, incorporating this directive and all other information we have gathered.
+
+### **Final Infrastructure Analysis & Master Research Prompt**
+
+**Overall Objective:** The following data inventories the hardware assets and strategic documents for a distributed infrastructure. The end goal is a comprehensive plan for a VS Code agent to build, configure, and deploy a **suite of AI microservices** designed to collectively function as a comprehensive AI Dungeon Master. This plan must be executable from a clean slate and result in a modular, multi-faceted, and fully functional system.
+
+---
+---
+
+### **Section 1: Source Material Inventory**
+
+**1.1: Inventoried Physical Hardware & Network Topology**
+
+* **Component 1: HART-DESKTOP (Interactive Development & Gaming Node)**
+    * **OS Foundation**: Microsoft Windows 11 Pro
+    * **Hardware**: Intel i9-14an900KS, NVIDIA RTX 4060 Ti (16 GB), 192 GiB DDR5 RAM, 2x 2TB + 1x 512GB NVMe SSDs.
+* **Component 2: HART-SERVER (Persistent Services Workhorse)**
+    * **OS Foundation**: Ubuntu 22.04.5 LTS
+    * **Hardware**: Intel i7-6850K, NVIDIA GTX 1080 Ti (11 GB), 128 GiB DDR4 RAM, a large, heterogeneous array of NVMe and SATA drives.
+* **Component 3: HART-ROUTER (Network Core)**
+    * **Model**: Linksys E7350 running OpenWrt
+    * **Hardware**: MediaTek MT7621 SoC, Gigabit Ethernet, Wi-Fi 6.
+* **Component 4: Internet Gateway (Modem)**
+    * **Model**: ARRIS SURFboard S33v2
+    * **Hardware**: DOCSIS 3.1, 1x 2.5 Gbps Ethernet Port, 1x 1.0 Gbps Port.
+* **Physical Topology:** The internet connection enters via the Arris S33 modem, which is connected to the WAN port of the `HART-ROUTER`. The LAN ports of `HART-ROUTER` connect to a Netgear 8-port Gigabit Switch. Both `HART-DESKTOP` and `HART-SERVER` are connected via Ethernet to this switch. All other devices connect wirelessly.
+* **Provisioned Internet Speed:** 1 Gbps download / 40 Mbps upload.
+
+**1.2: Strategic & Technical Documentation**
+
+* [cite_start]**Primary Technical Specification (`Robust and Highly Performant T-SQL Database Schema...`)** [cite: 6869-7340]: Outlines the core data architecture, AI models, and API design. Its hardware assessment is to be considered **outdated** and superseded by the inventory above.
+* [cite_start]**Agent Methodology Guide (`The Developer's Arsenal...`)** [cite: 1-578]: Provides the principles for how the VS Code agent should be commanded, controlled, and configured.
+* [cite_start]**World-Building Data (`AI_DM_Documentation.docx`)** [cite: 6606-7261]: Serves as a blueprint and test case for the database schema and lore-handling capabilities.
+* **External Knowledge Base:** The final system must be able to securely access and process user-provided documents from a specified Google Drive folder.
+
+---
+---
+
+### **Section 2: Integrated Research Directives for AI**
+
+Based on the full inventory of the distributed infrastructure and strategic documents, generate a comprehensive implementation plan that addresses the following:
+
+1.  **Design a Modular "AI Suite" Architecture:**
+    * Your primary architectural goal is to design a **suite of specialized AI microservices**, not a single monolithic AI. The plan must detail how each of the following tasks will be handled by a distinct, modular component: world generation, lore generation, character generation, conversational dialogue, history/memory management, context tracking, item/loot creation, and creature/spell generation. The plan should specify the optimal AI model (e.g., a large Llama 4 model for narrative, a smaller fine-tuned model for item stats, Stable Diffusion for images) for each specific microservice.
+
+2.  **Propose a Workload Distribution Plan:**
+    * Design a distributed architecture for the AI microservices. Propose a specific workload allocation plan that leverages the unique strengths of each compute node (`HART-DESKTOP` vs. `HART-SERVER`) for tasks such as AI Model Training, AI Inference, Database Hosting, and Application Hosting.
+
+3.  **Define Compute Node Configurations:**
+    * **For `HART-DESKTOP`:** Design a virtualization strategy (e.g., WSL2 with GPU acceleration, Hyper-V with GPU Passthrough) that provides a powerful, isolated Linux environment for AI development while **preserving the host Windows OS for native, high-performance gaming**.
+    * **For `HART-SERVER`:** Generate a plan to configure the hardware as a high-performance, headless server for 24/7 hosting of the containerized application suite. This must include OS hardening, performance tuning, and a robust management plan for its complex storage array.
+
+4.  **Architect the Network and Security:**
+    * Generate a complete OpenWrt configuration for `HART-ROUTER` optimized for the current **1 Gbps / 40 Mbps** service. The configuration must implement network segmentation (VLANs) to securely isolate the server environment.
+    * Research and propose an optimal future-state physical network topology, evaluating the benefits of upgrading to a multi-gigabit switch.
+
+5.  **Create the Agentic Build Plan:**
+    * Synthesize the project's technical goals with the agent control methodologies. The final deliverable must be a master plan that an AI agent can execute. This includes the full **"Agent Constitution"** (`.github/copilot-instructions.md`) and a library of **Task Blueprints** (`.prompt.md` files) required to build, configure, and deploy the entire system from a clean slate.

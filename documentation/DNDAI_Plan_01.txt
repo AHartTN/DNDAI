@@ -1,0 +1,69 @@
+Of course. That makes perfect sense for an efficient workflow. Here is the complete, revised document for `HART-DESKTOP` for you to copy and paste.
+
+***
+
+### **System Profile & Research Directives for AI Dungeon Master Project**
+
+**Objective:** The following data describes `HART-DESKTOP`, which is one piece of a larger infrastructure assembled to take advantage of the available hardware. It will serve as the primary development workstation for building a robust, multi-faceted "microservice" Dungeons and Dragons AI Dungeon Master. This AI is expected to handle all duties of a real-life human dungeon master. This document provides the foundational system profile to inform deep research into the project's requirements.
+
+---
+
+#### **System Profile: HART-DESKTOP**
+
+* [cite_start]**Hostname**: `HART-DESKTOP` [cite: 29, 32]
+* [cite_start]**Operating System**: Microsoft Windows 11 Pro [cite: 51]
+* [cite_start]**OS Version**: 24H2 (Build 10.0.26100) [cite: 14, 53, 54]
+* [cite_start]**Primary User**: `ahart` [cite: 50]
+
+#### **1. Hardware Baseline (Core Capabilities)**
+
+* **System**
+    * [cite_start]**Manufacturer**: ASUS [cite: 36]
+    * [cite_start]**Model**: System Product Name [cite: 37]
+    * [cite_start]**System Type**: x64-based PC [cite: 48]
+    * [cite_start]**BIOS**: American Megatrends Inc. Version 2001, UEFI [cite: 20, 18]
+
+* **Processor (CPU)**
+    * [cite_start]**Model**: Intel(R) Core(TM) i9-14900KS [cite: 39, 99]
+    * [cite_start]**Cores**: 24 [cite: 105]
+    * [cite_start]**Logical Processors**: 32 [cite: 38, 106]
+    * [cite_start]**Socket**: LGA1700 [cite: 97]
+
+* **Memory (RAM)**
+    * [cite_start]**Total OS-Recognized Size**: 191.7 GiB (205,861,437,440 bytes) [cite: 49]
+    * [cite_start]**Physical Configuration**: 4 x 48 GiB Corsair DDR5 Modules [cite: 110-128]
+    * [cite_start]**Part Number**: CMH192GX5M4B5200C38 [cite: 111, 115, 120, 125]
+    * [cite_start]**Speed**: 5200 MHz [cite: 113, 118, 122, 127]
+
+* **Storage (Physical Drives)**
+    * [cite_start]**Drive 0**: NVMe Samsung SSD 990 PRO 2TB [cite: 151, 153]
+    * [cite_start]**Drive 1**: NVMe Samsung SSD 990 PRO 2TB [cite: 133, 136]
+    * [cite_start]**Drive 2**: NVMe SAMSUNG MZVPV512HDGL-00000 512GB [cite: 141, 144]
+
+* **Network Adapters**
+    * [cite_start]**Ethernet**: Intel(R) Ethernet Controller I226-V [cite: 423, 446]
+    * [cite_start]**Wi-Fi**: Intel(R) Wi-Fi 7 BE202 160MHz [cite: 278, 489, 595, 617, 681, 703]
+    * [cite_start]**Bluetooth**: Bluetooth Device (Personal Area Network) [cite: 294, 317]
+    
+* **Graphics**
+    * [cite_start]An NVIDIA GPU is present, indicated by the installed **NVIDIA Graphics Driver 560.94**[cite: 1351].
+
+#### **2. Capability & Role Analysis (Configuration State)**
+
+* [cite_start]**Primary Role**: The software inventory defines this machine as a high-performance workstation for **Software Development and Gaming** [cite: 972-1380].
+* [cite_start]**Storage Configuration**: The three high-speed NVMe drives are partitioned into logical volumes, indicating an organized data management strategy for the operating system, applications/installations, and a user workspace [cite: 121, 130, 139, 148-151, 156-159].
+* **Network State**:
+    * [cite_start]The primary **Intel Ethernet controller is active**, connected, and operating at **1 Gbps** [cite: 419, 421-422]. [cite_start]It is configured to receive an IP address via DHCP and its connection is profiled as "Public"[cite: 1902, 1906].
+    * [cite_start]The **Wi-Fi 7 and Bluetooth** adapters are physically present but were not actively connected at the time of the report[cite: 248, 290].
+* [cite_start]**Development Environment**: The system is heavily equipped for development, with **Visual Studio 2022** [cite: 979][cite_start], **Git** [cite: 1255][cite_start], **Unity Hub** [cite: 1258][cite_start], and a wide array of **.NET SDKs** already installed [cite: 972-1380].
+
+---
+
+#### **3. Research Directives for AI**
+
+Based on the system profile provided above, perform the following research and analysis:
+
+1.  **Driver & Firmware Plan:** Identify the latest, stable drivers and any critical firmware updates for all specified hardware components compatible with Windows 11 Pro (24H2).
+2.  **Development Environment Preparation:** Outline a comprehensive plan to configure this machine as the primary development environment for the AI Dungeon Master project. The plan should leverage existing tools (Visual Studio 2022, .NET SDKs, Git) and recommend any additional software (e.g., containerization platforms, specific Python environments, database tools) that would be beneficial.
+3.  **AI/ML Capabilities Assessment:** Evaluate the suitability of this hardware for training and running local large language or specialized AI models. Analyze the CPU, the 192 GiB RAM capacity, and the implicit high-performance NVIDIA GPU in the context of typical AI/ML workloads.
+4.  **Integrated Workflow Proposal:** Propose a development-to-deployment workflow for the AI microservice. This proposal should consider how this Windows workstation (`HART-DESKTOP`) would interact with a headless Ubuntu server (`HART-SERVER`) and an OpenWrt router (`HART-ROUTER`) for tasks like hosting, data management, and secure remote access.

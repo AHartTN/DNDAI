@@ -1,0 +1,55 @@
+Of course. Based on our extensive collaboration and a comprehensive synthesis of all provided hardware inventories and strategic documents, here is the final, complete infrastructure report and the master research prompt you have been working towards.
+
+### **Final Infrastructure Analysis & Master Research Prompt**
+
+**Overall Objective:** The following data inventories the hardware assets and strategic documents for a distributed infrastructure designed to develop and host a "microservice" AI Dungeon Master. The end goal is a comprehensive plan for a VS Code agent to configure this entire infrastructure from a clean slate, allocating workloads to the optimal hardware to achieve the project's objectives while preserving all operational requirements.
+
+---
+---
+
+### **Section 1: Source Material Inventory**
+
+**1.1: Inventoried Physical Hardware & Network Topology**
+
+* **Component 1: HART-DESKTOP (Interactive Development & Gaming Node)**
+    * **OS Foundation**: Microsoft Windows 11 Pro
+    * **Hardware**: Intel i9-14900KS, NVIDIA RTX 4060 Ti (16 GB), 192 GiB DDR5 RAM, 2x 2TB + 1x 512GB NVMe SSDs.
+* **Component 2: HART-SERVER (Persistent Services Workhorse)**
+    * **OS Foundation**: Ubuntu 22.04.5 LTS
+    * **Hardware**: Intel i7-6850K, NVIDIA GTX 1080 Ti (11 GB), 128 GiB DDR4 RAM, a large, heterogeneous array of NVMe and SATA drives.
+* **Component 3: HART-ROUTER (Network Core)**
+    * **Model**: Linksys E7350 running OpenWrt
+    * **Hardware**: MediaTek MT7621 SoC, Gigabit Ethernet, Wi-Fi 6.
+* **Component 4: Internet Gateway (Modem)**
+    * **Model**: ARRIS SURFboard S33v2
+    * **Hardware**: DOCSIS 3.1, 1x 2.5 Gbps Ethernet Port, 1x 1.0 Gbps Ethernet Port.
+* **Physical Topology:** The internet connection enters via the **Arris S33 modem**. The modem is connected to the WAN port of the **HART-ROUTER**. The LAN ports of `HART-ROUTER` connect to a **Netgear 8-port Gigabit Switch**. Both **`HART-DESKTOP`** and **`HART-SERVER`** are connected via Ethernet to this switch, forming the high-speed backbone of the network. All other IoT and wireless devices connect via the `HART-ROUTER`'s Wi-Fi.
+* **Provisioned Internet Speed:** 1 Gbps download / 40 Mbps upload.
+
+**1.2: Strategic & Technical Documentation**
+
+* **Primary Technical Specification (`Robust and Highly Performant T-SQL Database Schema...`)**: Outlines the core data architecture, AI models, and API design. [cite_start]Its hardware assessment is to be considered **outdated** and superseded by the inventory above [cite: 6869-7340].
+* [cite_start]**Agent Methodology Guide (`The Developer's Arsenal...`)**: Provides the principles for how the VS Code agent should be commanded and controlled [cite: 1-578].
+* [cite_start]**World-Building Data (`AI_DM_Documentation.docx`)**: Serves as a blueprint and test case for the database schema and lore-handling capabilities [cite: 6606-7261].
+* **External Knowledge Base:** The final system must be able to securely access and process user-provided documents from a specified Google Drive folder.
+
+---
+---
+
+### **Section 2: Integrated Research Directives for AI**
+
+Based on the full inventory of the distributed infrastructure and strategic documents, generate a comprehensive implementation plan that addresses the following:
+
+1.  **Workload Distribution and Architecture:**
+    * Design a distributed microservice architecture. Propose a specific workload allocation plan that leverages the unique strengths of each compute node (`HART-DESKTOP` vs. `HART-SERVER`) for tasks such as AI Model Training, AI Inference, Database Hosting, and Application Hosting.
+
+2.  **Compute Node Configuration:**
+    * **For `HART-DESKTOP`:** Design a virtualization strategy (e.g., WSL2 with GPU acceleration, Hyper-V with GPU Passthrough) that provides a powerful, isolated Linux environment for AI development and model training while **preserving the host Windows OS for native, high-performance gaming**. This is a critical, non-negotiable constraint.
+    * **For `HART-SERVER`:** Generate a plan to configure the hardware as a high-performance, headless server for 24/7 hosting of containerized applications. This must include OS hardening, performance tuning (including addressing the RAM speed discrepancy), and a robust management plan for its complex storage array.
+
+3.  **Network and Security Configuration:**
+    * **Current State Optimization:** Generate a complete OpenWrt configuration for `HART-ROUTER` that is optimized for the current physical topology and the provisioned **1 Gbps / 40 Mbps** internet service. The configuration must implement network segmentation (VLANs) to securely isolate the server environment from the general-use and IoT devices.
+    * **Future State Research:** Research and propose an optimal future-state physical network topology. This should evaluate the benefits of replacing the current 1 Gbps switch with a multi-gigabit switch to fully leverage the 2.5 Gbps port on the Arris S33 modem and enable faster-than-gigabit speeds for internal traffic between `HART-DESKTOP` and `HART-SERVER`.
+
+4.  **Agentic Build Plan:**
+    * Synthesize the project's technical goals with the agent control methodologies. The final deliverable must be a master plan that an AI agent can execute. This includes the full **"Agent Constitution"** (`.github/copilot-instructions.md`) and a library of **Task Blueprints** (`.prompt.md` files) required to build, configure, and deploy the entire system.

@@ -1,0 +1,15 @@
+
+# Feudal Hierarchy Diagram Prompt
+
+Create a detailed diagram illustrating the feudal hierarchy from Monarch down to Esquire. Use medieval European visual motifs: crowns, banners, castles, and heraldic shields. Each rank should be visually distinct, with connecting lines showing vassalage relationships. Include:
+- Monarch at the top, with ornate crown and palace.
+- Princes/Princesses below, with royal regalia.
+- Dukes/Duchesses with castle icons.
+- Marquesses, Earls, Viscounts, Barons, Lords, Knights, Esquires, each with appropriate attire, weapons, or symbols.
+- Subordinate lines between ranks.
+- Background: parchment texture, subtle map outlines.
+- Color palette: gold, crimson, royal blue, silver.
+- Label each rank clearly.
+- Add a legend for symbols.
+
+File format: PNG, 1920x1080 or SVG. Save as 'feudal-hierarchy.png'.

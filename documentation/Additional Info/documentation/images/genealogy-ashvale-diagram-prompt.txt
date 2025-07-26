@@ -1,0 +1,13 @@
+# Genealogy Diagram Prompt
+
+Create a comprehensive genealogy diagram for House Ashvale, showing:
+- Senior branch (Duke Ashvale, heir Lionel) at the top.
+- Cadet branches: Blackmoor (Earl), Redford (Viscount) descending from younger sons.
+- Marriage alliances, with connecting lines and spouse names.
+- Notable events: succession crisis, marriage alliance, extinction events, elevation by decree.
+- Heraldic shields for each branch, with unique colors and symbols.
+- Use medieval family tree style, parchment background, and clear labels.
+- Add a legend for symbols (heir, marriage, crisis, elevation).
+- Color palette: deep blue, gold, crimson, silver.
+
+File format: PNG, 1920x1080 or SVG. Save as 'genealogy-ashvale.png'.
