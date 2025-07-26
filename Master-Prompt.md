@@ -12,6 +12,10 @@ Component 1: HART-DESKTOP (Interactive Development & Gaming Node)
 OS Foundation: Microsoft Windows 11 Pro 
 
 
+
+
+
+
 Hardware: Intel i9-14900KS, NVIDIA RTX 4060 Ti (16 GB), 192 GiB DDR5 RAM, multiple NVMe SSDs. 
 
 
@@ -29,6 +33,7 @@ Component 3: HART-ROUTER (Network Core)
 
 Model: Linksys E7350 running OpenWrt 
 
+
 Component 4: Internet Gateway (Modem)
 
 Model: ARRIS SURFboard S33v2
@@ -39,23 +44,23 @@ Physical Topology: Internet -> Arris S33 -> HART-ROUTER -> Gigabit Switch -> (HA
 
 Provisioned Internet Speed: 1 Gbps download / 40 Mbps upload.
 
-1.2: Foundational Documents for Analysis
+1.2: Foundational Documents & Codebase for Analysis
 
-Corpus Item 1: Architectural & Strategic Goals (AI Dungeon Master Optimization, etc.): These documents contain detailed proposals for a data architecture, discussions of AI models, and an analysis of a legacy hardware environment. They represent a deep exploration of the project's technical goals .
+Corpus Item 1: Primary Code & Documentation Repository: The entire content of the GitHub repository located at https://github.com/AHartTN/DNDAI is to be considered a primary source of truth for the project's current state and documentation.
 
-
-
-
-
-
-Corpus Item 2: Agentic Engineering Principles (The Developer's Arsenal, etc.): These documents provide a comprehensive framework for engineering autonomous, resilient, and efficient AI agents within a VS Code environment .
+Corpus Item 2: Architectural & Strategic Goals (AI Dungeon Master Optimization, etc.): These documents contain detailed proposals for a data architecture, discussions of AI models, and an analysis of a legacy hardware environment. They represent a deep exploration of the project's technical goals .
 
 
 
 
-Corpus Item 3: World-Building & Data-Modeling Blueprint (AI_DM_Documentation.docx): This document provides a rich, structured example of the complex, hierarchical lore and rule systems the final AI must be able to manage .
+Corpus Item 3: Agentic Engineering Principles (The Developer's Arsenal, etc.): These documents provide a comprehensive framework for engineering autonomous, resilient, and efficient AI agents within a VS Code environment .
 
-Corpus Item 4: The Full Development Dialogue: The complete transcript of the conversation that led to this prompt, containing the evolution of the project's goals and critical meta-context.
+
+
+
+Corpus Item 4: World-Building & Data-Modeling Blueprint (AI_DM_Documentation.docx): This document provides a rich, structured example of the complex, hierarchical lore and rule systems the final AI must be able to manage .
+
+Corpus Item 5: The Full Development Dialogue: The complete transcript of the conversation that led to this prompt, containing the evolution of the project's goals and critical meta-context.
 
 Section 2: Integrated Research & Planning Directives
 Guiding Principles
@@ -88,21 +93,19 @@ This is your most critical task. Your plan must detail the architecture of the b
 
 Prerequisite Toolkit: The agent must be equipped with a Custom Toolkit for codebase interaction. This toolkit is a prerequisite for all other operations and must include, at a minimum, a GitRepositoryCloner and a FileSystemAnalyzer.
 
-Bootstrapping: The agent's process will be initiated by loading a single MasterPrompt.md file. Its first action must be to use its GitRepositoryCloner tool to clone any specified source repositories.
+Bootstrapping: The agent's process will be initiated by loading a single MasterPrompt.md file. Its first action must be to use its GitRepositoryCloner tool to clone the repository specified in Corpus Item 1.
 
 Workspace Isolation: The agent must immediately create and operate from an isolated working directory (e.g., .agent_workspace/).
 
 Cognitive Loop & State Management: The agent's core loop must be built around a Hierarchical Task Tree to ensure it never stops while work is unfinished.
 
-Resilience & Self-Correction: The loop must include a Reflective Cycle (Plan -> Act -> Evaluate -> Refine) to enable the agent to overcome errors without human intervention.
+Resilience & Self-Correction: The loop must include a Reflective Cycle (Plan -> Act -> Evaluate -> Refine) that enables the agent to overcome errors without human intervention.
 
-Goal Adherence: As part of its loop, the agent must constantly refer back to its core instructions in the MasterPrompt.md to re-validate its current actions against the project's primary objectives.
+Goal Adherence & Grounding: The agent's core loop must constantly refer back to its instructions in the MasterPrompt.md and use Retrieval-Augmented Generation (RAG) against the provided sources to ensure its actions are always aligned with the primary objective and grounded in fact.
 
 Quality Assurance: The agent's work is only considered complete when it passes a verifiable, machine-readable "Definition of Done" (DoD).
 
 Resilience to User Error: The agent's "Constitution" must be designed with a strict Instruction Hierarchy to protect it from being distracted or misled by user input.
-
-User Interaction Protocol: The agent's communication model must avoid premature finality and always cede final authority for task completion to the user.
 
 Integrate Foundational Domain Knowledge:
 
