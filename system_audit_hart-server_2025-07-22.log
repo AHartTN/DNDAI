@@ -1,0 +1,509 @@
+############################################################
+###         Comprehensive System Audit Started           ###
+############################################################
+Date: Tue Jul 22 11:36:11 AM UTC 2025
+Report File: system_audit_hart-server_2025-07-22.log
+Running with user: root
+------------------------------------------------------------
+
+
+--- [1] System & OS Details ---
+ Static hostname: hart-server
+       Icon name: computer-desktop
+         Chassis: desktop
+      Machine ID: 32010f039f854ee5af35b205c3999784
+         Boot ID: d2c588f01878497ba25fa29c0fc58def
+Operating System: Ubuntu 22.04.5 LTS
+          Kernel: Linux 5.15.0-144-generic
+    Architecture: x86-64
+ Hardware Vendor: MSI
+  Hardware Model: MS-7A20
+---
+Linux hart-server 5.15.0-144-generic #157-Ubuntu SMP Mon Jun 16 07:33:10 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+---
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 22.04.5 LTS
+Release:	22.04
+Codename:	jammy
+---
+Uptime: up 2 hours, 41 minutes
+
+
+--- [2] CPU Details ---
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           46 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  12
+On-line CPU(s) list:                     0-11
+Vendor ID:                               GenuineIntel
+Model name:                              Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz
+CPU family:                              6
+Model:                                   79
+Thread(s) per core:                      2
+Core(s) per socket:                      6
+Socket(s):                               1
+Stepping:                                1
+CPU max MHz:                             4000.0000
+CPU min MHz:                             1200.0000
+BogoMIPS:                                7199.29
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault cat_l3 cdp_l3 invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm rdt_a rdseed adx smap intel_pt xsaveopt cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local dtherm ida arat pln pts md_clear flush_l1d
+Virtualization:                          VT-x
+L1d cache:                               192 KiB (6 instances)
+L1i cache:                               192 KiB (6 instances)
+L2 cache:                                1.5 MiB (6 instances)
+L3 cache:                                15 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-11
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             KVM: Mitigation: VMX disabled
+Vulnerability L1tf:                      Mitigation; PTE Inversion; VMX conditional cache flushes, SMT vulnerable
+Vulnerability Mds:                       Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Meltdown:                  Mitigation; PTI
+Vulnerability Mmio stale data:           Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP conditional; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsx async abort:           Mitigation; Clear CPU buffers; SMT vulnerable
+---
+Detailed CPU Core/Model Info:
+      1 processor	: 9
+      1 processor	: 8
+      1 processor	: 7
+      1 processor	: 6
+      1 processor	: 5
+      1 processor	: 4
+      1 processor	: 3
+      1 processor	: 2
+      1 processor	: 11
+      1 processor	: 10
+      1 processor	: 1
+      1 processor	: 0
+      1 model name	: Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz
+      1 model name	: Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz
+      1 model name	: Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz
+      1 model name	: Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz
+      1 model name	: Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz
+      1 model name	: Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz
+      1 model name	: Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz
+      1 model name	: Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz
+      1 model name	: Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz
+      1 model name	: Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz
+      1 model name	: Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz
+      1 model name	: Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz
+      1 cpu cores	: 6
+      1 cpu cores	: 6
+      1 cpu cores	: 6
+      1 cpu cores	: 6
+      1 cpu cores	: 6
+      1 cpu cores	: 6
+      1 cpu cores	: 6
+      1 cpu cores	: 6
+      1 cpu cores	: 6
+      1 cpu cores	: 6
+      1 cpu cores	: 6
+      1 cpu cores	: 6
+      1 core id		: 5
+      1 core id		: 5
+      1 core id		: 4
+      1 core id		: 4
+      1 core id		: 3
+      1 core id		: 3
+      1 core id		: 2
+      1 core id		: 2
+      1 core id		: 1
+      1 core id		: 1
+      1 core id		: 0
+      1 core id		: 0
+
+
+--- [3] Memory (RAM) Details ---
+Summary:
+               total        used        free      shared  buff/cache   available
+Mem:           125Gi       2.1Gi       121Gi       1.0Mi       2.3Gi       122Gi
+Swap:           15Gi          0B        15Gi
+---
+Detailed Memory Information:
+MemTotal:       131800396 kB
+MemFree:        127162872 kB
+MemAvailable:   128425360 kB
+Buffers:          121784 kB
+Cached:          2153132 kB
+SwapCached:            0 kB
+Active:           584412 kB
+Inactive:        3390864 kB
+Active(anon):       1876 kB
+Inactive(anon):  1709496 kB
+Active(file):     582536 kB
+Inactive(file):  1681368 kB
+Unevictable:       28272 kB
+Mlocked:           28272 kB
+SwapTotal:      16777212 kB
+SwapFree:       16777212 kB
+Dirty:                 4 kB
+Writeback:             0 kB
+AnonPages:       1729044 kB
+Mapped:           197896 kB
+Shmem:              1948 kB
+KReclaimable:     110956 kB
+Slab:             205848 kB
+SReclaimable:     110956 kB
+SUnreclaim:        94892 kB
+KernelStack:        8952 kB
+PageTables:         9152 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    82677408 kB
+Committed_AS:    2550904 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      169260 kB
+VmallocChunk:          0 kB
+Percpu:            11584 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    694272 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      477320 kB
+DirectMap2M:     4663296 kB
+DirectMap1G:    131072000 kB
+---
+Virtual Memory Stats (sampling for 5 seconds):
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 0  0      0 127162872 121784 2264088    0    0    20     1   40   64  0  0 100  0  0
+ 0  0      0 127163168 121784 2264080    0    0     0     0  608  685  0  0 100  0  0
+ 0  0      0 127163168 121796 2264080    0    0     0   136  415  691  0  0 100  0  0
+ 0  0      0 127163168 121796 2264080    0    0     0     0  478  739  0  0 100  0  0
+ 0  0      0 127163168 121796 2264080    0    0     0     0  392  662  0  0 100  0  0
+
+
+--- [4] Granular Storage Details ---
+Block Devices, Mountpoints, and UUIDs:
+NAME            SIZE TYPE FSTYPE      MOUNTPOINT        UUID
+loop0          63.8M loop squashfs    /snap/core20/2599 
+loop1          63.9M loop squashfs    /snap/core20/2318 
+loop2            87M loop squashfs    /snap/lxd/29351   
+loop3          89.4M loop squashfs    /snap/lxd/31333   
+loop4          38.8M loop squashfs    /snap/snapd/21759 
+loop5          49.3M loop squashfs    /snap/snapd/24792 
+sda           447.1G disk                               
+└─sda1        447.1G part ext4        /var/www_data     8d7c1c7d-0e50-486b-b690-3789bf6aa687
+sdb           447.1G disk                               
+└─sdb1        447.1G part ext4        /opt/servers      9a97c389-757a-454c-a1fd-8478f57a25c6
+sdc           465.8G disk                               
+└─sdc1        465.8G part ext4        /opt/projects     820e94a0-61db-472d-befd-20114716a5c3
+sdd             1.8T disk                               
+└─sdd1          1.8T part ext4        /mnt/Archive      062556a1-a1e1-43de-b649-ef2e04cf692b
+sde             3.6T disk                               
+└─sde1          3.6T part ext4        /mnt/Vault        a58d1940-f799-4c73-b358-daed66d0cf6e
+sdf           931.5G disk                               
+└─sdf1        931.5G part ext4        /mnt/Backup       9f1cbaf7-3e13-45b9-9ead-3a069c031de5
+sdg           931.5G disk                               
+└─sdg1        931.5G part ext4                          4be31093-013e-4b23-8ae9-7a116b859ee7
+sdh           931.5G disk                               
+└─sdh1        931.5G part ext4                          c454c633-aabe-4533-b1da-7245fc36bdac
+sr0            1024M rom                                
+nvme0n1       931.5G disk                               
+└─nvme0n1p1   931.5G part ext4        /data             788907ed-ee29-4f6d-8b9d-5c914dbc1a65
+nvme1n1       238.5G disk                               
+├─nvme1n1p1       1G part vfat        /boot/efi         61FE-0A9E
+└─nvme1n1p2   237.4G part LVM2_member                   EBzZKz-6aZ1-uHxH-EerM-Dx8X-EDYb-vO9Sli
+  ├─vg0-lv--0     1G lvm  ext4        /boot             2f6afee7-df5c-4ad8-b922-aa32ea4805ec
+  └─vg0-lv--1 236.4G lvm  ext4        /                 85929aaf-bd6d-4b89-b075-821bd1155cfe
+---
+Filesystem Disk Space Usage (with Filesystem Type):
+Filesystem            Type   Size  Used Avail Use% Mounted on
+tmpfs                 tmpfs   13G  1.9M   13G   1% /run
+/dev/mapper/vg0-lv--1 ext4   232G   35G  186G  16% /
+tmpfs                 tmpfs   63G     0   63G   0% /dev/shm
+tmpfs                 tmpfs  5.0M     0  5.0M   0% /run/lock
+/dev/nvme0n1p1        ext4   916G   17M  870G   1% /data
+/dev/sda1             ext4   440G   16K  440G   1% /var/www_data
+/dev/sdc1             ext4   458G  228K  458G   1% /opt/projects
+/dev/sdb1             ext4   440G   28K  440G   1% /opt/servers
+/dev/mapper/vg0-lv--0 ext4   974M  157M  751M  18% /boot
+/dev/sdd1             ext4   1.8T  129M  1.8T   1% /mnt/Archive
+/dev/sde1             ext4   3.6T  1.9T  1.7T  53% /mnt/Vault
+/dev/sdf1             ext4   916G   32K  916G   1% /mnt/Backup
+/dev/nvme1n1p1        vfat   1.1G  6.1M  1.1G   1% /boot/efi
+tmpfs                 tmpfs   13G  8.0K   13G   1% /run/user/1000
+---
+Filesystem UUIDs & Types (requires sudo):
+/dev/mapper/vg0-lv--1: UUID="85929aaf-bd6d-4b89-b075-821bd1155cfe" BLOCK_SIZE="4096" TYPE="ext4"
+/dev/sdf1: LABEL="storage01" UUID="9f1cbaf7-3e13-45b9-9ead-3a069c031de5" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="primary" PARTUUID="b5e80e06-e093-42d5-ba91-74e9d0a1cb08"
+/dev/nvme0n1p1: LABEL="work" UUID="788907ed-ee29-4f6d-8b9d-5c914dbc1a65" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="489e7338-3cc1-47b1-83ec-a8fa0d5bf9b2"
+/dev/sdd1: LABEL="archive" UUID="062556a1-a1e1-43de-b649-ef2e04cf692b" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="primary" PARTUUID="a5ac621b-6e39-405d-be50-9f270b5e699c"
+/dev/sdb1: LABEL="data02" UUID="9a97c389-757a-454c-a1fd-8478f57a25c6" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="primary" PARTUUID="f1c303fd-ead5-4b0e-a531-6f1977e8cc6a"
+/dev/sdg1: LABEL="storage02" UUID="4be31093-013e-4b23-8ae9-7a116b859ee7" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="primary" PARTUUID="6abfecfd-5435-4b4a-b97e-77003bef831f"
+/dev/mapper/vg0-lv--0: UUID="2f6afee7-df5c-4ad8-b922-aa32ea4805ec" BLOCK_SIZE="4096" TYPE="ext4"
+/dev/sde1: LABEL="vault" UUID="a58d1940-f799-4c73-b358-daed66d0cf6e" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="primary" PARTUUID="8e3938e7-0a56-4614-b4d3-99ea91ee721c"
+/dev/sdc1: LABEL="data03" UUID="820e94a0-61db-472d-befd-20114716a5c3" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="primary" PARTUUID="09037c5c-7edc-44dd-a5ab-9d973e6c16ed"
+/dev/nvme1n1p2: UUID="EBzZKz-6aZ1-uHxH-EerM-Dx8X-EDYb-vO9Sli" TYPE="LVM2_member" PARTUUID="efcbfef5-7e70-4876-a9b3-9de0ddf5c2c9"
+/dev/nvme1n1p1: UUID="61FE-0A9E" BLOCK_SIZE="512" TYPE="vfat" PARTUUID="3bfad477-7268-44ec-8075-16be108c6421"
+/dev/sda1: LABEL="data01" UUID="8d7c1c7d-0e50-486b-b690-3789bf6aa687" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="primary" PARTUUID="33f507ff-5911-4eef-afed-46495e2f8eaf"
+/dev/sdh1: LABEL="storage03" UUID="c454c633-aabe-4533-b1da-7245fc36bdac" BLOCK_SIZE="4096" TYPE="ext4" PARTLABEL="primary" PARTUUID="0d3f98db-a11f-4c76-a51e-a0963c2c7be2"
+/dev/loop1: TYPE="squashfs"
+/dev/loop4: TYPE="squashfs"
+/dev/loop2: TYPE="squashfs"
+/dev/loop0: TYPE="squashfs"
+/dev/loop5: TYPE="squashfs"
+/dev/loop3: TYPE="squashfs"
+---
+Partition Tables (requires sudo):
+Disk /dev/loop0: 63.77 MiB, 66863104 bytes, 130592 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop1: 63.95 MiB, 67051520 bytes, 130960 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop2: 87.04 MiB, 91267072 bytes, 178256 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop3: 89.4 MiB, 93745152 bytes, 183096 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop4: 38.83 MiB, 40714240 bytes, 79520 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop5: 49.29 MiB, 51687424 bytes, 100952 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/nvme0n1: 931.51 GiB, 1000204886016 bytes, 1953525168 sectors
+Disk model: Samsung SSD 970 EVO Plus 1TB            
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 111E2AB0-48F0-4AA9-A5E2-0A6571241B1A
+
+Device         Start        End    Sectors   Size Type
+/dev/nvme0n1p1  2048 1953521663 1953519616 931.5G Linux filesystem
+
+
+Disk /dev/nvme1n1: 238.47 GiB, 256060514304 bytes, 500118192 sectors
+Disk model: INTEL SSDPEKKW256G7                     
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 687577E2-F53C-40DA-A530-1007A9CC8774
+
+Device           Start       End   Sectors   Size Type
+/dev/nvme1n1p1    2048   2203647   2201600     1G EFI System
+/dev/nvme1n1p2 2203648 500115455 497911808 237.4G Linux filesystem
+
+
+Disk /dev/mapper/vg0-lv--0: 1 GiB, 1073741824 bytes, 2097152 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/mapper/vg0-lv--1: 236.42 GiB, 253856055296 bytes, 495812608 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/sda: 447.13 GiB, 480103981056 bytes, 937703088 sectors
+Disk model: INTEL SSDSC2BW48
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 78141DFC-C8A8-4CE4-8CB7-93F245014AD0
+
+Device     Start       End   Sectors   Size Type
+/dev/sda1   2048 937703054 937701007 447.1G Linux filesystem
+
+
+Disk /dev/sdb: 447.13 GiB, 480103981056 bytes, 937703088 sectors
+Disk model: INTEL SSDSC2BW48
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 87EFE6CF-9818-45B4-81CC-64258790E3F4
+
+Device     Start       End   Sectors   Size Type
+/dev/sdb1   2048 937703054 937701007 447.1G Linux filesystem
+
+
+Disk /dev/sdc: 465.76 GiB, 500107862016 bytes, 976773168 sectors
+Disk model: Samsung SSD 850 
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: B8B452D9-3E87-4B07-B376-89E11C53B141
+
+Device     Start       End   Sectors   Size Type
+/dev/sdc1   2048 976773134 976771087 465.8G Linux filesystem
+
+
+Disk /dev/sde: 3.64 TiB, 4000787030016 bytes, 7814037168 sectors
+Disk model: WDC WD4005FZBX-0
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: C73CB1B3-FD6A-47BB-A7D9-8159F989EE11
+
+Device     Start        End    Sectors  Size Type
+/dev/sde1   2048 7814035455 7814033408  3.6T Linux filesystem
+
+
+Disk /dev/sdd: 1.82 TiB, 2000398934016 bytes, 3907029168 sectors
+Disk model: WDC WD20EFRX-68E
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: gpt
+Disk identifier: A9253E01-03EE-4476-B1C4-EED9D6837706
+
+Device     Start        End    Sectors  Size Type
+/dev/sdd1   2048 3907028991 3907026944  1.8T Linux filesystem
+
+
+Disk /dev/sdg: 931.51 GiB, 1000204886016 bytes, 1953525168 sectors
+Disk model: EACS-65D6B0     
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 33553920 bytes
+Disklabel type: gpt
+Disk identifier: B775D37F-85A4-46DF-B86A-A034E6C3D94A
+
+Device     Start        End    Sectors   Size Type
+/dev/sdg1   2048 1953525134 1953523087 931.5G Linux filesystem
+
+
+Disk /dev/sdf: 931.51 GiB, 1000204886016 bytes, 1953525168 sectors
+Disk model: EACS-00D6B0     
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 33553920 bytes
+Disklabel type: gpt
+Disk identifier: A3DD36B7-E18F-45A1-B4D4-A4A9103021E3
+
+Device     Start        End    Sectors   Size Type
+/dev/sdf1   2048 1953525134 1953523087 931.5G Linux filesystem
+
+
+Disk /dev/sdh: 931.51 GiB, 1000204886016 bytes, 1953525168 sectors
+Disk model: 002-9TT153      
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 33553920 bytes
+Disklabel type: gpt
+Disk identifier: 7D8FFFC8-3028-44C7-B7B1-515BFF5DCC39
+
+Device     Start        End    Sectors   Size Type
+/dev/sdh1   2048 1953525134 1953523087 931.5G Linux filesystem
+---
+Mounted Filesystems (Tree View):
+TARGET                                        SOURCE                 FSTYPE      OPTIONS
+/                                             /dev/mapper/vg0-lv--1  ext4        rw,noatime
+├─/sys                                        sysfs                  sysfs       rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/kernel/security                      securityfs             securityfs  rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/fs/cgroup                            cgroup2                cgroup2     rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot
+│ ├─/sys/fs/pstore                            pstore                 pstore      rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/firmware/efi/efivars                 efivarfs               efivarfs    rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/fs/bpf                               bpf                    bpf         rw,nosuid,nodev,noexec,relatime,mode=700
+│ ├─/sys/kernel/debug                         debugfs                debugfs     rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/kernel/tracing                       tracefs                tracefs     rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/fs/fuse/connections                  fusectl                fusectl     rw,nosuid,nodev,noexec,relatime
+│ └─/sys/kernel/config                        configfs               configfs    rw,nosuid,nodev,noexec,relatime
+├─/proc                                       proc                   proc        rw,nosuid,nodev,noexec,relatime
+│ └─/proc/sys/fs/binfmt_misc                  systemd-1              autofs      rw,relatime,fd=29,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=28681
+│   └─/proc/sys/fs/binfmt_misc                binfmt_misc            binfmt_misc rw,nosuid,nodev,noexec,relatime
+├─/dev                                        udev                   devtmpfs    rw,nosuid,relatime,size=65842892k,nr_inodes=16460723,mode=755,inode64
+│ ├─/dev/pts                                  devpts                 devpts      rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000
+│ ├─/dev/shm                                  tmpfs                  tmpfs       rw,nosuid,nodev,inode64
+│ ├─/dev/hugepages                            hugetlbfs              hugetlbfs   rw,relatime,pagesize=2M
+│ └─/dev/mqueue                               mqueue                 mqueue      rw,nosuid,nodev,noexec,relatime
+├─/run                                        tmpfs                  tmpfs       rw,nosuid,nodev,noexec,relatime,size=13180040k,mode=755,inode64
+│ ├─/run/lock                                 tmpfs                  tmpfs       rw,nosuid,nodev,noexec,relatime,size=5120k,inode64
+│ ├─/run/credentials/systemd-sysusers.service none                   ramfs       ro,nosuid,nodev,noexec,relatime,mode=700
+│ ├─/run/user/1000                            tmpfs                  tmpfs       rw,nosuid,nodev,relatime,size=13180036k,nr_inodes=3295009,mode=700,uid=1000,gid=1000,inode64
+│ └─/run/snapd/ns                             tmpfs[/snapd/ns]       tmpfs       rw,nosuid,nodev,noexec,relatime,size=13180040k,mode=755,inode64
+│   └─/run/snapd/ns/lxd.mnt                   nsfs[mnt:[4026532980]] nsfs        rw
+├─/snap/core20/2599                           /dev/loop0             squashfs    ro,nodev,relatime,errors=continue
+├─/snap/core20/2318                           /dev/loop1             squashfs    ro,nodev,relatime,errors=continue
+├─/snap/lxd/29351                             /dev/loop2             squashfs    ro,nodev,relatime,errors=continue
+├─/snap/lxd/31333                             /dev/loop3             squashfs    ro,nodev,relatime,errors=continue
+├─/snap/snapd/21759                           /dev/loop4             squashfs    ro,nodev,relatime,errors=continue
+├─/snap/snapd/24792                           /dev/loop5             squashfs    ro,nodev,relatime,errors=continue
+├─/data                                       /dev/nvme0n1p1         ext4        rw,noatime,discard
+├─/var/www_data                               /dev/sda1              ext4        rw,noatime,discard,stripe=8191
+├─/opt/projects                               /dev/sdc1              ext4        rw,noatime,discard,stripe=8191
+├─/opt/servers                                /dev/sdb1              ext4        rw,noatime,discard,stripe=8191
+├─/boot                                       /dev/mapper/vg0-lv--0  ext4        rw,noatime
+│ └─/boot/efi                                 /dev/nvme1n1p1         vfat        rw,noatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro
+├─/mnt/Archive                                /dev/sdd1              ext4        rw,noatime
+├─/mnt/Vault                                  /dev/sde1              ext4        rw,noatime
+└─/mnt/Backup                                 /dev/sdf1              ext4        rw,noatime,stripe=8191
+---
+I/O Performance Stats (sampling for 5 seconds):
+./system_audit.sh: line 72: iostat: command not found
+iostat not found. Consider installing 'sysstat' for I/O stats.
+
+
+--- [5] GPU / Accelerator Details ---
+PCI Device Scan for Graphics Cards:
+03:00.0 VGA compatible controller: NVIDIA Corporation GP102 [GeForce GTX 1080 Ti] (rev a1)
+03:00.1 Audio device: NVIDIA Corporation GP102 HDMI Audio Controller (rev a1)
+---
+NVIDIA GPU Details (if present):
+Tue Jul 22 11:36:16 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.64.03              Driver Version: 575.64.03      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce GTX 1080 Ti     Off |   00000000:03:00.0 Off |                  N/A |
+| 29%   29C    P8             16W /  250W |       3MiB /  11264MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
