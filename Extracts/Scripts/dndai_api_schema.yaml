@@ -1,0 +1,160 @@
+# DNDAI API Schema (OpenAPI 3.0)
+openapi: 3.0.0
+info:
+  title: DNDAI Modular Agent API
+  version: 1.0.0
+paths:
+  /api/narrative:
+    post:
+      summary: Generate narrative output
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                context:
+                  type: string
+                player_actions:
+                  type: array
+                  items:
+                    type: string
+                campaign_state:
+                  type: object
+      responses:
+        '200':
+          description: Narrative output
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  narrative:
+                    type: string
+                  next_hooks:
+                    type: array
+                    items:
+                      type: string
+                  dm_notes:
+                    type: string
+  /api/encounter:
+    post:
+      summary: Generate encounter
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                party_level:
+                  type: integer
+                terrain:
+                  type: string
+                campaign_state:
+                  type: object
+      responses:
+        '200':
+          description: Encounter output
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  encounter:
+                    type: object
+                  balance_rating:
+                    type: string
+                  loot:
+                    type: array
+                    items:
+                      type: string
+  /api/npc:
+    post:
+      summary: Generate NPC
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                archetype:
+                  type: string
+                tags:
+                  type: array
+                  items:
+                    type: string
+                campaign_state:
+                  type: object
+      responses:
+        '200':
+          description: NPC output
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  npc:
+                    type: object
+                  stat_block:
+                    type: object
+                  portrait_prompt:
+                    type: string
+  /api/item:
+    post:
+      summary: Generate item
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                rarity:
+                  type: string
+                type:
+                  type: string
+                campaign_state:
+                  type: object
+      responses:
+        '200':
+          description: Item output
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  item:
+                    type: object
+                  lore:
+                    type: string
+                  image_prompt:
+                    type: string
+  /api/image:
+    post:
+      summary: Generate image asset
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                prompt:
+                  type: string
+                style_guide:
+                  type: string
+      responses:
+        '200':
+          description: Image asset output
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  image_url:
+                    type: string
+                  metadata:
+                    type: object

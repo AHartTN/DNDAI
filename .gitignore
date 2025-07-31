@@ -1,0 +1,51 @@
+# .gitignore for DNDAI
+# Ignore Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+.venv/
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore docx archive
+/docx_archive/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore logs and temp files
+*.log
+*.tmp
+
+# Ignore node_modules (if any JS tooling is used)
+node_modules/
+
+# Ignore compiled TypeScript
+*.tsbuildinfo
+
+# Ignore YAML config secrets
+*.secrets.yaml
+
+# Ignore markdown temp/backup files
+*~
+*.bak
+
+# Ignore output folders
+/dist/
+/build/
+
+# Ignore any personal or system-specific files
+*.swp
+*.swo
+
+# Ignore test output
+/test-output/

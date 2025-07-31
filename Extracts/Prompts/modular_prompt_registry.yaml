@@ -1,0 +1,6 @@
+# DNDAI Modular Prompt Registry (YAML)
+modular_narrative_prompt: Extracts/Prompts/modular_narrative_prompt.py
+encounter_resolution_prompt: Extracts/Prompts/encounter_resolution_prompt.py
+npc_stat_block_prompt: Extracts/Prompts/npc_stat_block_prompt.py
+player_action_interpretation_prompt: Extracts/Prompts/Player_Action_Interpretation_Prompt.md
+conversation_quality_assessment_prompt: Extracts/Prompts/Conversation_Quality_Assessment_Prompt.md

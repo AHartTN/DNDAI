@@ -1,0 +1,11 @@
+# DNDAI Symbolic Reference Registry (YAML)
+_NARRATIVE_ENGINE_: src/ai/narrative_engine.py
+_ENCOUNTER_GEN_: src/ai/encounter_generator.py
+_NPC_BUILDER_: src/ai/npc_builder.py
+_ITEM_GEN_: src/ai/item_generator.py
+_VISUAL_ASSET_PIPELINE_: src/ai/visual_asset_pipeline.py
+_BOT_INTERFACE_: src/ai/bot_interface.py
+_CONFIG_: src/config/config.yaml
+_LOGS_: src/logs/
+_DATA_: src/data/
+_TESTS_: src/tests/

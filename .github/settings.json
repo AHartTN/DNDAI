@@ -1,0 +1,21 @@
+{
+  // VS Code and Copilot workspace settings for maximum compliance and context referencing
+  "github.copilot.enable": true,
+  "github.copilot.enableInNotebooks": true,
+  "github.copilot.enableInTerminal": true,
+  "github.copilot.advanced": {
+    "inlineSuggest": true,
+    "panel": true
+  },
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.git": true
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
